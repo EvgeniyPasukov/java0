@@ -1,7 +1,7 @@
 package examples;
 import java.io.*;
 
-public class java_test {
+public class files_test {
     public static void main(String[] args) throws IOException {
         BufferedReader br = null;
 
@@ -10,6 +10,7 @@ public class java_test {
 
             if (!file.exists())
                 file.createNewFile();
+
 
             PrintWriter pw = new PrintWriter(file);
             pw.println("Ok");
@@ -24,6 +25,7 @@ public class java_test {
         }finally {
            br.close();
         }
+
 
     }
 }
